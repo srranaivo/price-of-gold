@@ -1,0 +1,2 @@
+class Goldprice < ApplicationRecord
+end
