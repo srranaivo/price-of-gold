@@ -1,0 +1,7 @@
+<h1>Hello here all prices of gold for all countries</h1>
+
+<ul>
+  <% @goldprices.each do |goldprice| %>
+    <li><%= goldprice.currency %></li>
+  <% end %>
+</ul>
