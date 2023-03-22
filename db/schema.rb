@@ -10,10 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_22_173429) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_22_173842) do
   create_table "goldprices", force: :cascade do |t|
     t.string "currency"
-    t.float "oz_price"
     t.float "gram_price"
     t.string "trend"
     t.datetime "created_at", null: false
