@@ -1,7 +1,7 @@
 require_relative "boot"
 
 #ajout de la gem dotenv:
-require "dotenv-rails"
+require "dotenv/load"
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
