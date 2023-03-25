@@ -1,7 +1,2 @@
-<h1>Hello here all prices of gold for all countries</h1>
-
-<ul>
-  <% @goldprices.each do |goldprice| %>
-    <li><%= goldprice.currency %></li>
-  <% end %>
-</ul>
+<h1>Prix de l'or du jour</h1>
+<p>Le prix de l'or en dollar par once est actuellement de : <%= @gold_price %> $.</p>
