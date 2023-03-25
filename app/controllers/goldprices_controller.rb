@@ -1,4 +1,4 @@
-require 'httparty'
+require "httparty"
 
 class GoldpricesController < ApplicationController
 
@@ -11,11 +11,11 @@ class GoldpricesController < ApplicationController
 
 
   def index
-    response = HTTParty.get("https://api.metals-api.com/v1/latest?base=USD&symbols=XAU")
-    if response.success?
+    response = HTTParty.get(METALS_API_URL + "&access_key=" + ENV["METALS_API_KEY"])
+    if response.code == 200
       @gold_price = response["rates"]["XAU"]
     else
-      # Gérer les erreurs ici
+      @gold_price = "N/A"
     end
   end
 end

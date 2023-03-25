@@ -3,8 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+# utilisation de dotenv
+gem "dotenv-rails"
 # utilisation de la gem httparty pour faciliter l'envoi de requêtes HTTP à une API
-gem 'httparty'
+gem "httparty"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
